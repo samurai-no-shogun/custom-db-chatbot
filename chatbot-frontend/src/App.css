@@ -1,0 +1,82 @@
+/* src/App.css */
+
+/* Existing Tailwind CSS styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chat-container {
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message.bot {
+  background-color: #fff;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Neumorphic Button Styling */
+.neumorphic-button {
+  background: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 
+    8px 8px 16px #bebebe, 
+    -8px -8px 16px #ffffff;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.neumorphic-button:hover {
+  box-shadow: 
+    4px 4px 8px #bebebe, 
+    -4px -4px 8px #ffffff;
+}
